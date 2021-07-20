@@ -4,9 +4,13 @@ type: docker
 name: webhook-test
 
 steps:
-- name: test
+- name: prerequisites
   image: archlinux
   commands:
-  - pacman -Syyu --noconfirm neofetch
+  - pacman -Syyu --noconfirm reflector python3 neofetch base-devel
   - neofetch
-  - cat test.txt
+- name: build
+  image: archlinux
+  commands:
+  - echo hello
+  - pacman -Syyu --noconfirm sl
