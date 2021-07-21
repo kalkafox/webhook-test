@@ -17,4 +17,8 @@ steps:
   - cd OpenRCT2/build
   - cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
   - echo Hooray!
+- name: test
+  image: archlinux
+  commands:
+  - echo u wot m8
 
