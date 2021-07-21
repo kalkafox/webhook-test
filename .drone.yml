@@ -19,3 +19,4 @@ steps:
   - pacman -Syyu --noconfirm sl
   - pacman -Syyu --noconfirm git
   - git clone https://github.com/HellFirePvP/AstralSorcery.git
+  - echo Hooray!
