@@ -13,5 +13,5 @@ steps:
   image: gradle:6.8.3
   commands:
   - cd AstralSorcery
-  - gradle check
+  - gradle clean
 
