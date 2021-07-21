@@ -16,5 +16,5 @@ steps:
   - mkdir -p OpenRCT2/build
   - cd OpenRCT2/build
   - cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
-  - make -j12
+  - echo Hooray!
 
