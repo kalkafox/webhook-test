@@ -10,7 +10,7 @@ steps:
   - pacman -Syyu --noconfirm git
   - git clone https://github.com/HellFirePvP/AstralSorcery.git
 - name: build
-  image: gradle:4.10.3
+  image: gradle:6.8.3
   commands:
   - cd AstralSorcery
   - gradle build
