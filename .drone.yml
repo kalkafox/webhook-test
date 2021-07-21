@@ -8,9 +8,14 @@ steps:
   image: archlinux
   commands:
   - pacman -Syyu --noconfirm reflector python3 neofetch base-devel
-  - neofetch
+  - pacman -Syyu --noconfirm curl
+  - reflector
+  - echo "hello"
+  - curl ifconfig.co
 - name: build
   image: archlinux
   commands:
   - echo hello
   - pacman -Syyu --noconfirm sl
+  - pacman -Syyu --noconfirm git
+  - git clone https://github.com/HellFirePvP/AstralSorcery.git
