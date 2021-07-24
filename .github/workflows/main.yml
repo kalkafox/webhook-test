@@ -14,6 +14,6 @@ jobs:
     container:
       image: archlinux:base-devel
     steps:
-      - run: pacman -Syyu neofetch
+      - run: pacman -Syyu --noconfirm neofetch
       - run: neofetch
       - run: curl -v https://kalka.io
