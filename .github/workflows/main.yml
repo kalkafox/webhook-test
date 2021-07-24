@@ -14,6 +14,6 @@ jobs:
     container:
       image: archlinux
     steps:
-      - run: pacman -Syyu --noconfirm base-devel python3 nano neofetch nginx plasma-meta
+      - run: pacman -Syyu --noconfirm base-devel python3 nano neofetch nginx curl
       - run: python3 -VVVVVVV
       - run: curl -v https://kalka.io
