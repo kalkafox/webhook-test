@@ -1,24 +1,12 @@
 kind: pipeline
 type: docker
 
-name: OpenRCT2
+name: webhook-test
 
 steps:
-- name: clone-openrct2
-  image: archlinux
-  commands:
-  - pacman -Syyu --noconfirm git
-  - git clone https://github.com/OpenRCT2/OpenRCT2.git
-- name: build
-  image: archlinux:base-devel
-  commands:
-  - pacman -Syyu --noconfirm sdl2 freetype2 fontconfig libzip libpng speexdsp curl openssl icu zlib duktape cmake nlohmann-json
-  - mkdir -p OpenRCT2/build
-  - cd OpenRCT2/build
-  - cmake .. -DCMAKE_BUILD_TYPE=RelWithDebInfo
-  - echo Hooray!
 - name: test
   image: archlinux
   commands:
-  - echo u wot m8
+  - echo test
+
 
