@@ -12,8 +12,8 @@ jobs:
     runs-on: self-hosted
 
     container:
-      image: archlinux:base-devel
+      image: archlinux
     steps:
-      - run: pacman -Syyu --noconfirm neofetch
-      - run: neofetch
+      - run: pacman -Syyu --noconfirm base-devel python3 openjdk8-jdk gradle nano neofetch nginx
+      - run: python3 -VVVVVVV
       - run: curl -v https://kalka.io
